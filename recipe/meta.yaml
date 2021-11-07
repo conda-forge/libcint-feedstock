@@ -24,8 +24,6 @@ requirements:
     - {{ compiler('c') }}
     - cmake
     - make
-  host:
-    - libblas
 
 test:
   commands:

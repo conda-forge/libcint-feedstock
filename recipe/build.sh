@@ -3,7 +3,11 @@ cmake ${CMAKE_ARGS} -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_INSTALL_LIBDIR=lib \
     -DBUILD_SHARED_LIBS=ON \
     -S. \
-    -Bbuild
+    -Bbuild \
+    -DWITH_F12=ON \
+    -DWITH_RANGE_COULOMB=ON \
+    -DWITH_COULOMB_ERF=ON
+    
 
 cd build
 

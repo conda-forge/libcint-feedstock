@@ -1,5 +1,5 @@
 {% set name = "libcint" %}
-{% set version = "5.1.5" %}
+{% set version = "5.1.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/sunqm/libcint/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: cec2d32a11915a3b2f2ec6c80f3f3b486426114199813d6453118c9b82cf3d85
+  sha256: c111d82140e2e8415775e73f571a16456c9deadd36d58795edd170035b06f8a5
   patches:
     - 0001-Fix-test-location.patch
 

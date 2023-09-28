@@ -17,7 +17,7 @@ index 8e2d0f9..b6ef133 100644
  import numpy
  
 -_cint = ctypes.CDLL(os.path.abspath(os.path.join(__file__, '../../build/libcint.so')),
-+_cint = ctypes.CDLL(os.path.abspath(os.path.join(__file__, os.path.join(sys.prefix, 'lib')),
++_cint = ctypes.CDLL(os.path.abspath(os.path.join(__file__, os.path.join(sys.prefix, 'lib'))),
                      mode=os.RTLD_GLOBAL|os.RTLD_NOW)
  
  

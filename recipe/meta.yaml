@@ -9,6 +9,8 @@ package:
 source:
   url: https://github.com/sunqm/libcint/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 6512b20aed1538e1f73bf97e6cfbfefb891598731c8e95640b6bf2e825065b0a
+  patches:
+    - 0001-Fix-test-location.patch
 
 build:
   number: 0

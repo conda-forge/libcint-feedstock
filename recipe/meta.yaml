@@ -1,5 +1,5 @@
 {% set name = "libcint" %}
-{% set version = "5.5.0" %}
+{% set version = "6.1.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/sunqm/libcint/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: c822a9a454587d935287de0f64a2c2cf5338323a554a3f34bcfb4a2892daf477
+  sha256: 8287e1eaf2b8c8e19eb7a8ea92fd73898f0884023c503b84624610400adb25c4
   patches:
     - 0001-Fix-test-location.patch
 
@@ -17,11 +17,14 @@ build:
   skip: true  # [win]
   run_exports:
     - {{ pin_subpackage(name, min_pin='x.x', max_pin='x.x') }}
-
+  force_ignore_keys:
+    - python
+    - numpy
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - cmake
     - make
 

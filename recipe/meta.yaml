@@ -46,7 +46,7 @@ about:
   summary: general GTO integrals for quantum chemistry
   dev_url: https://github.com/sunqm/libcint
   doc_url: http://wiki.sunqm.net/libcint
-  license: BSD-2-Clause
+  license: Apache-2.0
   license_file: LICENSE
 
 extra:

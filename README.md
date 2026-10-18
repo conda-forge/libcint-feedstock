@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libcint-feedsto
 
 Home: https://github.com/sunqm/libcint
 
-Package license: BSD-2-Clause
+Package license: Apache-2.0
 
 Summary: general GTO integrals for quantum chemistry
 

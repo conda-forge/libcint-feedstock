@@ -10,9 +10,10 @@ source:
   sha256: cf30825bc5748b556d808381ebbe835652dae9e5c3931d69e77e075bd8a9101d
   patches:
     - 0001-Fix-test-location.patch
+    - 0002-Link-quadmath-and-libm-PRIVATE.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage(name, min_pin='x.x', max_pin='x.x') }}
   force_ignore_keys:
